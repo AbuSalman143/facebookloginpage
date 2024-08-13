@@ -23,9 +23,11 @@ const Form=()=>{
             ))}
             {(!toggel&&(<input type="text" placeholder="Enter Mobile Number"/>))}
             <input type="password" placeholder="Password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
-            <button className="login">Log in</button>
-            <p className="forget">forget password?</p>
-            <button className="craete">Create new account</button>
+            {(toggel&&(<>
+                <button className="login">Log in</button>
+                <p className="forget">forget password?</p>
+            </>))}
+            <button className="craete" onClick={()=>{setToggel(!toggel)}}>{!toggel?"Submit":"Create new account"}</button>
             
         </div>
         {!toggel?<p className="text"><span onClick={()=>{setToggel(!toggel)}} >Login</span> If You Are Already User. </p>:<p className="text"><span onClick={()=>{setToggel(!toggel)}} > Sign Up</span>If You A Not User. </p>}   
