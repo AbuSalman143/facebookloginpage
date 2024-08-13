@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* font-family: "Abril Fatface", serif; */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Abril Fatface", serif; */
+}
+
+
+
+:root{
+    --background-color:#F2F4F7 ;
+    --facebook-color:#0866FF;
+    --creat-btn-color:#36A420;
+    --input-boder-color:#DDDFE2;
+    --balck:#000000;
+    --white:#ffffff;
+}
+body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    background-color: var(--background-color);
+    
+}
+
+#root{
+    width: 100%;
+    padding: 50px;
+}
+
+.loginCotainer{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    .heading{
+        width: 40%;
+        h1{
+            color: var(--facebook-color);
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    .form{
+        max-width: 200px;
+        box-shadow: 0 0 0.5px 0px ;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--white);
+        padding: 10px ;
+        gap: 10px;
+        h1{
+            font-size: 1.2rem;
+            text-align: left;
+            width: 100%;
+            color: var(--facebook-color);
+        }
+        input{
+
+        padding: 8px;
+        font-size: 0.5rem;
+        width: 180px;
+        border-radius: 3px;
+        border: 0.5px solid var(--input-boder-color);
+       
+       }
+       .usename{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        input{
+            width:50%;
+        }
+    }
+    
+       input:focus {
+        outline: 0.5px solid var(--facebook-color);
+       
+       }
+       .login{
+        background-color: var(--facebook-color);
+        border: none;
+        color: var(--white);
+        padding: 8px;
+        border-radius: 3px;
+        font-size: 0.56em;
+        font-weight: 600;
+        cursor: pointer;
+        width: 100%;
+       }
+       .forget{
+        text-align: center;
+        font-size: 0.5rem;
+        margin-top: -5px;
+        color: var(--facebook-color);
+       }
+       .forget:hover{
+        cursor: pointer;
+        text-decoration: underline;
+       }
+       .craete{
+        background-color: var(--creat-btn-color);
+        border: none;
+        padding: 8px;
+        font-size: 0.6rem;
+        cursor: pointer;
+        color: var(--white);
+        font-weight: 600;
+        border-radius: 3px;
+       }
+    }
+    .text{
+        /* border: 2px solid; */
+        text-align: center;
+        margin-top: 10px;
+        font-size: 0.5rem;
+        span{
+            font-weight: 700;
+        }
+        span:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+.form-container span{
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--facebook-color);
+}
+
